@@ -7,4 +7,8 @@ showcase its superiority over models trained on satellite data when forecasting 
 tropical agroforestry sites. This project will thoroughly present their data, go through every step in the pipeline,
 reproduce their experiments with the baseline CNN, and compare the expected vs actual results.
 
+Link to original repo: https://github.com/gyrrei/ReforesTree
+
+Sample of annotated images:
+
 ![](images/annotated_data/3.png)
