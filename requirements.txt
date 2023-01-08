@@ -1,2 +1,6 @@
+opencv-python==4.3.0.38
+ipykernel
+jupyter
+
 # local package
 deepforest @ file:///workspaces/DeepForest
