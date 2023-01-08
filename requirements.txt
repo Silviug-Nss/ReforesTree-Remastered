@@ -1,0 +1,5 @@
+pot
+pandas
+numpy
+geopandas
+shapely
