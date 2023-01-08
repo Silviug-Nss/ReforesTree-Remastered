@@ -1,0 +1,2 @@
+# local package
+deepforest @ file:///workspaces/DeepForest
