@@ -1,0 +1,45 @@
+{
+	"name": "DeepForest Predictions",
+	"build": {
+	  "dockerfile": "Dockerfile",
+	  "context": ".."
+	},
+	"containerEnv": {
+	},
+	"mounts": [
+		"type=bind,source=${localEnv:AI4GOOD_WORKSPACE}/DeepForest,target=/workspaces/DeepForest"
+	],
+	"runArgs": [
+	  "--gpus=all",
+	  "--privileged",
+	  "--shm-size=24G"
+	],
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": { 
+				"python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.languageServer": "Pylance",
+				"editor.rulers": [
+				  120
+				]
+			},
+			
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-toolsai.jupyter",
+				"njqdev.vscode-python-typehint",
+	  			"mhutchie.git-graph",
+				"eamodio.gitlens"
+			]
+		}
+	},
+	"postCreateCommand": "bash ./.devcontainer/post_create.sh",
+	"features": {
+		"git": "os-provided"
+	}
+}
