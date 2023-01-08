@@ -11,7 +11,7 @@ class ImagesRegistry:
     - Tile names
     '''
     def __init__(
-        self, annotations_filepath: str = "/workspaces/AI4Good_Group3a/data/raw/annotations/all_annotations.csv"
+        self, annotations_filepath: str = "./data/raw/annotations/all_annotations.csv"
     ) -> None:
         self.annotation_df = pd.read_csv(annotations_filepath)
 

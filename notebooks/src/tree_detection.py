@@ -10,7 +10,7 @@ from .datatypes import DeepforestDetection, TreeLabel
 class DeepForestDetectionRegistry:
     '''This class loads tree detections predicted by deepforest'''
     def __init__(
-        self, deepforest_detection_dir: str = "/workspaces/AI4Good_Group3a/data/predicted_bbox"
+        self, deepforest_detection_dir: str = "./data/predicted_bbox"
     ):
         self.deepforest_detection_dir = deepforest_detection_dir
 

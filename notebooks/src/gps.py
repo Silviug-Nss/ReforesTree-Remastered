@@ -9,7 +9,7 @@ class OrthomosaicGps:
     '''
     def __init__(
         self,
-        ortho_data_filepath: str = "/workspaces/AI4Good_Group3a/data/raw/tiles/ortho_data.csv",
+        ortho_data_filepath: str = "./data/raw/tiles/ortho_data.csv",
         orthomosaic_name: str = None
     ):
         self.ortho_data = pd.read_csv(ortho_data_filepath)
