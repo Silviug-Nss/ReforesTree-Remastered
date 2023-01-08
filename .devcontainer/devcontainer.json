@@ -7,7 +7,7 @@
 	"containerEnv": {
 	},
 	"mounts": [
-		"type=bind,source=${localEnv:AI4GOOD_WORKSPACE}/DeepForest,target=/workspaces/DeepForest"
+		"type=bind,source=${localEnv:REFORESTREE_WORKSPACE}/DeepForest,target=/workspaces/DeepForest"
 	],
 	"runArgs": [
 	  "--gpus=all",

@@ -12,3 +12,18 @@ Link to original repo: https://github.com/gyrrei/ReforesTree
 Sample of annotated images:
 
 ![](images/annotated_data/3.png)
+
+# Tree detection with deepforest
+
+To reproduce tree detection with deepforest, an older version of deepforest must be installed. 
+This is done by cloning the repo and installing deepforest from source.
+To avoid issues with tensorflow versions, we recommend developing inside a Docker container.
+We included a Dockerfile and a `devcontainer.json` file.
+
+Before building the devcontainer, run the following bash commands:
+
+```bash
+export REFORESTREE_WORKSPACE=/path/to/workspace
+git clone git@github.com:weecology/DeepForest.git --branch v0.3.2 $REFORESTREE_WORKSPACE
+```
+
